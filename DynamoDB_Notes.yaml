@@ -1,0 +1,58 @@
+DynamoDB Notes:
+    Parameters to choose a database for your architecture:
+     -- Workload Type
+            -- Read Heavy or Write Heavy
+            -- Patterns with traffic
+     -- Storage Requirements
+            -- GBs or TBs or PBs
+     -- Data Durability & Reliability
+     -- Performance Needs
+             -- Low Latency Requirements
+             -- Concurrent Users
+             -- Throughput
+     -- Data Structure
+             -- Relational
+             -- Key Value DynamoDB /DAX/ Keyspaces??
+             -- Document ?? Mongo
+             -- In Memory
+             -- Graph
+             -- TimeSeries
+      -- Schema Flexibility
+      -- Cost Considerations
+    AWS Databases:
+     -- RDBMS
+        -- RDS 
+        -- Aurora
+        -- RedShift
+     -- Key Value
+        -- DynamoDB
+        -- DAX
+        -- Keyspaces
+     -- Document
+        -- DocumentDB
+     -- In Memory
+        -- Elasticache
+        -- Elasticache for Redis 
+        -- Memcached
+    DynamoDB Overview:
+     -- Fast, Flexible, Cost-effective, Fault Tolerant, Secure
+     -- Multi-region, multi-master database (Global Tables)
+     -- Single-digit millisecond performance at any scale
+     -- In-memory caching with DAX (DynamoDB Accelerator, microsecond latency)
+     -- Supports CRUD (Create/Read/Update/Delete) operations through APIs
+     -- Supports transactions across multiple tables (ACID support)
+     -- Access patterns must be known ahead of time for efficient design and performance
+    Tables Info:
+     -- Independent Entities
+     -- You control performance at the table level
+     -- Table items stored as JSON (DynamoDB-specific JSON)
+     -- Primary keys are mandatory, rest of the schema is flexible
+        -- can be simple or composite
+     -- Simple Key has a single attribute (=partition key or hash key)
+     -- Composite Key has two attributes (=partition/hash key + sort/range key)
+     -- Non-key attributes (including secondary key attributes) are optional
+     
+    
+
+
+          
